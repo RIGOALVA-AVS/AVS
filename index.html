@@ -1164,11 +1164,24 @@ html,body{height:100%;overflow:hidden;background:var(--bgpat);font-family:var(--
 
   <!-- Columna 2: Imagen (solo PC) -->
   <div class="login-pc-img" style="flex:1;height:100vh;position:relative;order:2;overflow:hidden;background-color:#080f1e;display:flex;align-items:center;justify-content:center;">
-    <div class="login-pc-only" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:20px;width:100%">
-      <div class="avs360"><div class="avs360coin"><img src="avs_logo.png" alt="AVS"><img src="avs_logo.png" alt="AVS"></div></div>
-      <div style="text-align:center;font-family:var(--font-d);color:#fff">
-        <div style="font-size:clamp(20px,2.4vw,30px);font-weight:800">Atenas Viaje Seguro</div>
-        <div style="font-size:13px;color:rgba(255,255,255,.78);margin-top:4px">Movilidad y comercio, seguro y local · Pura Vida 🌴</div>
+    <div class="login-pc-only" style="width:100%;max-width:470px;padding:20px;position:relative">
+      <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-weight:900;font-size:clamp(120px,22vw,300px);color:rgba(0,229,184,0.05);pointer-events:none;user-select:none;line-height:1">AVS</div>
+      <div style="position:relative">
+        <div style="text-align:center;font-family:var(--font-d);font-weight:800;font-size:22px;margin-bottom:16px;color:var(--tx)">✏️ Por qué elegir AVS</div>
+        <div style="background:var(--sf);border:1px solid var(--bd2);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:18px">
+          <div style="display:flex;gap:13px;align-items:flex-start">
+            <div style="flex:0 0 48px;height:48px;border-radius:50%;background:var(--cd);border:1px solid rgba(0,229,184,0.3);display:flex;align-items:center;justify-content:center;font-size:24px">🚗</div>
+            <div><div style="font-weight:800;font-size:15px;color:var(--tx)">Vehículos Certificados</div><div style="font-size:12px;color:var(--mt);line-height:1.5;margin-top:2px">Revisados, menores a 15 años y con seguro al día. Tu seguridad va primero.</div></div>
+          </div>
+          <div style="display:flex;gap:13px;align-items:flex-start">
+            <div style="flex:0 0 48px;height:48px;border-radius:50%;background:var(--cd);border:1px solid rgba(0,229,184,0.3);display:flex;align-items:center;justify-content:center;font-size:24px">👮</div>
+            <div><div style="font-weight:800;font-size:15px;color:var(--tx)">Conductores Confiables</div><div style="font-size:12px;color:var(--mt);line-height:1.5;margin-top:2px">Verificados, con código de seguridad único por viaje. Sabés quién te lleva.</div></div>
+          </div>
+          <div style="display:flex;gap:13px;align-items:flex-start">
+            <div style="flex:0 0 48px;height:48px;border-radius:50%;background:var(--cd);border:1px solid rgba(0,229,184,0.3);display:flex;align-items:center;justify-content:center;font-size:24px">🏪</div>
+            <div><div style="font-weight:800;font-size:15px;color:var(--tx)">Comercio Local</div><div style="font-size:12px;color:var(--mt);line-height:1.5;margin-top:2px">Pedí a los comercios de Atenas y recibí en tu casa. <b style="color:var(--g)">Atenas Primero · Apoya Lo Nuestro.</b></div></div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Botón Municipalidad flotante (solo móvil) -->
@@ -9110,7 +9123,7 @@ function avisarRegistroPendiente(){
 window.addEventListener('DOMContentLoaded',()=>{
   initSupabase();
   cargarTipoCambio();
-  try{ var _vd=document.createElement('div'); _vd.textContent='v27jun\u00b759'; _vd.style.cssText='position:fixed;bottom:2px;left:5px;font-size:9px;color:rgba(255,255,255,.32);z-index:100000;pointer-events:none;font-family:monospace'; document.body.appendChild(_vd); }catch(e){}
+  try{ var _vd=document.createElement('div'); _vd.textContent='v27jun\u00b762'; _vd.style.cssText='position:fixed;bottom:2px;left:5px;font-size:9px;color:rgba(255,255,255,.32);z-index:100000;pointer-events:none;font-family:monospace'; document.body.appendChild(_vd); }catch(e){}
 
   try{
     var _bub=function(node){
